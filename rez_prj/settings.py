@@ -55,6 +55,9 @@ INSTALLED_APPS = [
     # Local
     'accounts.apps.AccountsConfig',
     'bookings.apps.BookingsConfig',
+
+    # 3rd Party
+    'django_extensions',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
