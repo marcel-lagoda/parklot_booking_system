@@ -54,6 +54,7 @@ INSTALLED_APPS = [
 
     # Local
     'accounts.apps.AccountsConfig',
+    'bookings.apps.BookingsConfig',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
