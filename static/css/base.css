@@ -214,8 +214,13 @@ tr:nth-child(even) td {
   background: #f8f6ff;
 }
 
-.marcel {
-  color: blue;
+.navigation__list {
+list-style: none;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+
 }
 
 table {
