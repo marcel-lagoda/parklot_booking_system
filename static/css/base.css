@@ -84,6 +84,8 @@ body {
   grid-area: header;
 }
 
+.header__item {
+}
 
 .header__main {
   background-color: #f2f2f2;
