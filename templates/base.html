@@ -11,17 +11,19 @@
   <link rel="stylesheet" href="{% static 'css/normalize.css/' %}">
   <title>Rezerwator</title>
 </head>
-
 <body>
-  <div class="grid">
-    <header class="header">
+  <div class="">
+    <header class="header__main">
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__element">
-            <a class="navigation__link" href="#">Rezervator</a>
+            <a class="navigation__link" href="{% url 'home' %}"><img class="navigation__img" src="{% static '/images/home.svg' %}"></a>
           </li>
           <li class="navigation__element">
-            <a class="navigation__link" href="#">other page</a>
+            <a class="navigation__link" href="#"></a>
+          </li>
+          <li class="navigation__element">
+            <a class="navigation__link" href="#"></a>
           </li>
         </ul>
       </nav>
@@ -38,6 +40,7 @@
   <div class="footer__social">
     <span></span>
   </div>
+  <a class="footer__link" href="#top" class="footer"><img class="footer__img" src="{% static '/images/up.svg/'%}"></a>
 </footer>
   <script src="{% static 'js/app.js' %}"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
