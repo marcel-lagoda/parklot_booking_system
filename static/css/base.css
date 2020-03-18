@@ -12,13 +12,27 @@ body {
 }
 
 .footer {
-  grid-area: footer;
+  box-sizing: border-box;
+  left: 0;
+  padding: 16px;
+  padding-bottom: 0px;
+  width: 100%;
 }
 
 .footer__about {
 }
 
-.footer__social {
+.footer__img {
+  height: 16px;
+  width: 16px;
+
+}
+
+.footer__link {
+  position:fixed;
+  bottom: 10px;
+  right: 20px;
+  text-decoration: none;
 }
 
 .grid {
