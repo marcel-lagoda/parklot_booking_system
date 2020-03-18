@@ -1,0 +1,43 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="{% static 'css/base.css/' %}">
+  <link rel="stylesheet" href="{% static 'css/normalize.css/' %}">
+  <title>Rezerwator</title>
+</head>
+
+<body>
+  <div class="grid">
+    <header class="header">
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__element">
+            <a class="navigation__link" href="#">other page</a>
+          </li>
+          <li class="navigation__element">
+            <a class="navigation__link" href="#">other page</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  {% block content %}
+  <main>
+
+  </main>
+  {% endblock %}
+</body>
+<footer class="footer">
+  <p class="footer__about"></p>
+  <div class="footer__social">
+    <span></span>
+  </div>
+</footer>
+  <script src="{% static 'js/app.js' %}"></script>
+
+</body>
+</html>
