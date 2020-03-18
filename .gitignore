@@ -325,3 +325,5 @@ tags
 # Secret Project Data
 secrets.json
 temp/
+
+.vscode
