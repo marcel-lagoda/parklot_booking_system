@@ -1,7 +1,5 @@
 from django.contrib.auth import get_user_model
-from django.shortcuts import render
-from django.views import View
-from django.views.generic import ListView, TemplateView
+from django.views.generic import DetailView, ListView, UpdateView
 
 from .models import Booking
 
@@ -14,4 +12,13 @@ class HomePageView(ListView):
     paginate_by = 25
 
 
+class UpdateRezView(UpdateView):
+    model = Booking
+    fields = ['arrival', 'departure', 'status']
+    template_name = 'update_rez.html'
 
+
+class DetailRezView(DetailView):
+    model = Booking
+    template_name = 'booking.html'
+    context_object_name = 'booking'
