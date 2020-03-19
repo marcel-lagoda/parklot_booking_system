@@ -58,9 +58,12 @@ INSTALLED_APPS = [
 
     # 3rd Party
     'django_extensions',
+    'crispy_forms',
 ]
 
 AUTH_USER_MODEL = 'accounts.CustomUser'
+CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
