@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static%}
+
+{% block content %}
+
+<div class="card">
+  <div class="card-header">
+    <span class="font-weight-blod">
+      We've updated all your data successfully!
+    </span>
+    <div class="card-body">
+      <dl>
+        <dt>Person</dt>
+        <dd>{{ booking.user.name }}</dd>
+        <dt>Reservation #</dt>
+        <dd>{{ booking.number }}</dd>
+        <dt>Arrival</dt>
+        <dd>{{ booking.arrival }}</dd>
+        <dt>Departure</dt>
+        <dd>{{ booking.departure }}</dd>
+        <dt>No of persons</dt>
+        <dd>{{ booking.no_of_people }}</dd>
+        <dt>Status</dt>          
+        <dd>{{ booking.status }}</dd>
+      </dl>
+      <a href="{% url 'home' %}"><img class="navigation__img" src="{% static '/images/curved.jpg' %}"></a>
+    </div>
+  </div>
+</div>
+{% endblock %}
