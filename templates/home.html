@@ -25,7 +25,7 @@
     <td>{{ booking.departure }}</td>
     <td>{{ booking.no_of_people }}</td>
     <td>{{ booking.status }}</td>
-    <td><button class="table__button"><a href="#">Info</a></button></td>
+    <td><button class="table__button"><a href="{% url 'update' booking.pk %}">Info</a></button></td>
 
   </tr>
   {% endfor %}
