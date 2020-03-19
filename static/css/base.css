@@ -119,7 +119,7 @@ html {
 
 .navigation__element {
 display: block;
-margin: 0 16px
+margin: 0 16px;
 }
 
 .navigation__img {
@@ -172,6 +172,7 @@ table {
 .table__row {
   display: contents;
 }
+
 
 thead,
 tbody,
