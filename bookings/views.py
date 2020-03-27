@@ -3,6 +3,7 @@ from django.views.generic import DetailView, ListView, UpdateView
 
 from .models import Booking
 
+
 CustomUser = get_user_model()
 
 
